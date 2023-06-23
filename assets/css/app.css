@@ -20,3 +20,6 @@
     color: rgb(46, 119, 42);
     z-index: 4;
   }
+  span.pre{
+    white-space: pre-line
+  }
