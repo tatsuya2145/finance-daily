@@ -1,0 +1,49 @@
+  
+  .holiday
+  {
+      color: orange;
+  }
+  .w-6{
+      color: blue;
+  }
+  .w-0
+  {
+      color: red;
+  }
+  
+  .js-pagetop {
+    position: fixed;
+    width: 40px;
+    height: 40px;
+    border-radius: 32px;
+    background: #15a362;
+    color: #fff;
+    bottom: 50px;
+    right: 50px;
+    cursor: pointer;
+  }
+  
+  .js-pagetop:hover {
+    background: #41c874;
+  }
+  
+  .js-pagetop span {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: block;
+    width: 100%;
+    text-align: center;
+    font-size: 14px;
+  }
+  
+  span.pre{
+    white-space: pre-wrap;
+    word-break:break-word;
+    word-wrap: break-all;
+    overflow-wrap: break-all;
+    font-size: 1rem;
+  }
+  
+  
