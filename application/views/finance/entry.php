@@ -4,6 +4,9 @@
 		top: 0;
 		left: 0;
 	}
+	.ui-autocomplete{
+		z-index: 9999;
+	}
 </style>
 <div class="app">
 	<div class="app-wrapper">
@@ -304,19 +307,25 @@
 <script>
 	var finance_id;
 	var data;
+	var words = <?= json_encode($words);?>
 
+	
 	function modalInitialize() {
 		$('#finance_date, #finance_title, #amount, #description')
-			.val('')
-			.prop('disabled', false);
+		.val('')
+		.prop('disabled', false);
 		$('#payment_type, #amount_type')
-			.val('')
-			.css('background-color', '')
-			.prop('disabled', false);
+		.val('')
+		.css('background-color', '')
+		.prop('disabled', false);
 		$('#ok_gif, #error_icon').hide();
 		$('#error_message').html('');
 	}
-
+	
+	$("#finance_title").autocomplete({
+		source: words,
+	})
+	
 	$('#payment_type,#amount_type').on('change', function() {
 		let bgcolor = $(this).children('option:selected').css('background-color');
 		$(this).css('background-color', bgcolor);

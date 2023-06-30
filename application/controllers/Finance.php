@@ -20,13 +20,14 @@ class finance extends App_Controller
         {
             $category_id = $this->input->post('category_id');
         }
-
+        
         $this->data['finances']      = $this->finance->get($category_id);
         $this->data['amount_types']  = $this->finance->getAmountType();
         $this->data['payment_types'] = $this->finance->getPaymentType();
         $this->data['categories']    = $this->finance->getCategory();
         $this->data['sub_total']     = $this->finance->getSubTotal($category_id);
         $this->data['grand_total']   = $this->finance->getGrandTotal();
+        $this->data['words']         = $this->finance->getAutoCompleteWords();
         $this->data['category_id']   = $category_id;
         $this->load->view('inc/header',$this->data);
         $this->load->view('inc/navbar');

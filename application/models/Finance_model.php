@@ -95,6 +95,24 @@ class finance_model extends CI_Model {
                         ->result_array();
     }
 
+    public function getAutoCompleteWords()
+    {
+        $finance_titles = $this->db->select('finance_title')
+                        ->distinct('finance_title')
+                        ->get('finances')
+                        ->result_array();
+
+        $words = [];
+        foreach($finance_titles as $row)
+        {
+            $words[] = [
+                'label' => $row['finance_title']
+            ];
+        }
+
+        return $words;
+    }
+
 
     public function insert($data)
     {

@@ -34,6 +34,9 @@
     <script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.3/dist/additional-methods.js"></script>
     <!-- カスタムで作成したjs -->
     <script src="<?= base_url();?>assets/js/custom.js"></script>
+    <!-- jquery-UI -->
+    <script src="<?= base_url();?>assets/js/jquery-ui.js"></script>
+    <link rel="stylesheet" href="<?= base_url()?>assets/css/jquery-ui.css">
 </head> 
 
 <body>
