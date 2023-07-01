@@ -67,7 +67,7 @@ class finance extends App_Controller
                 'description'     => $this->input->post('description'),
                 'category_id'     => $this->input->post('category_id')
             ];
-            $result['result'] = $this->finance->insert($data);
+            $response['result'] = $this->finance->insert($data);
         }
 
         $response['validate'] = $validation;
