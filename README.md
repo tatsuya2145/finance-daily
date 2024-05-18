@@ -7,9 +7,3 @@ Codeigniter3で作成したシステムのコードをまとめたものです�
 * 日記管理
 
 WYSIWYGエディターを用いて日記を記入し管理するWebアプリ
-## portfolioURL
-https://tech-roiru.com/portfolio1/auth/login
-
-ID：ty_portfolio または yt_portfolio
-
-Password：password
