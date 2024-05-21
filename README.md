@@ -1,5 +1,5 @@
-# portfolio1
-Codeigniter3で作成したシステムのコードをまとめたものです。
+# FinanceApp & DailyApp
+Codeigniter3で作成した家計簿と日記アプリです。
 ## 概要
 * 家計簿
 
